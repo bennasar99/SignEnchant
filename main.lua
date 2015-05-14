@@ -43,7 +43,7 @@ function OnPlayerRightClick(Player, BlockX, BlockY, BlockZ, BlockFace, CursorX, 
 					Player:DeltaExperience(-toremove * 17)
 					Player:SendMessageSuccess("Successfully enchanted item")
 				else
-					Player:SendMessage("This item is not enchantable")
+					Player:SendMessageWarning("This item is not enchantable")
 				end
 			end
 		end
